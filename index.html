@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <h1 id="title" class="text-center">Mtree Hotel Feedback Form</h1>
+    <p id="description" class="text-center description">Please provide feedback on your experience in Mtree Hotel!</p>
+    <form id="survey-form">
+        <fieldset class="user-info">
+            <label id="name-label" for="name" class="question-block">Name</label>
+            <input id="name" class="input-text" type="text" name="name" placeholder="Enter your name:" required />
+
+            <label id="number-label" for="number" class="question-block">Age</label>
+            <input id="number" class="input-text" type="number" name="age" placeholder="Enter your age:" min="0" max="150" required />
+
+            <label id="email-label" for="email" class="question-block">Email</label>
+            <input id="email" class="input-text" type="email" name="email" placeholder="Enter your email:" required />
+        </fieldset>
+
+        <fieldset>
+            <p class="question-block">How did you hear about our hotel?</p>
+            <label for="internet-search" class="label-block">
+                <input id="internet-search" class="input-button" type="checkbox" name="hear-from" value="internet-search" /> Internet Search
+            </label>
+
+            <label for="social-media" class="label-block">
+                <input id="social-media" class="input-button" type="checkbox" name="hear-from" value="social-media" /> Social Media
+            </label>
+
+            <label for="friend/family-recommendation" class="label-block">
+                <input id="friend/family-recommendation" class="input-button" type="checkbox" name="hear-from" value="friend/family-recommendation" /> Friend or Family Recommendation
+            </label>
+
+            <label for="travel-agency" class="label-block">
+                <input id="travel-agency" class="input-button" type="checkbox" name="hear-from" value="travel-agency" /> Travel Agency
+            </label>
+
+            <label for="other" class="label-block">
+                <input id="other" class="input-button" type="checkbox" name="hear-from" value="other" /> Other
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <p class="question-block">How would you rate the cleanliness of your room</p>
+            <label for="excellent" class="label-block">
+                <input id="excellent" class="input-button" type="radio" name="cleanliness-rating" value="excellent" /> Excellent
+            </label>
+
+            <label for="good" class="label-block">
+                <input id="good" class="input-button" type="radio" name="cleanliness-rating" value="good" /> Good
+            </label>
+
+            <label for="fair" class="label-block">
+                <input id="fair" class="input-button" type="radio" name="cleanliness-rating" value="fair" /> Fair
+            </label>
+
+            <label for="poor" class="label-block">
+                <input id="poor" class="input-button" type="radio" name="cleanliness-rating" value="poor" /> Poor
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown" class="question-block">What was the purpose of your stay?</label>
+            <select id="dropdown" class="input-text" name="purpose">
+                <option value="business">Business</option>
+                <option value="leisure">Leisure</option>
+                <option value="event/conference">Event or Conference</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="comments/suggestions" class="question-block">Please provide any additional comments or suggestions.</label>
+            <textarea id="comments/suggestions" class="input-text" name="comments/suggestions" placeholder="Enter your comments or suggestions:"></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
